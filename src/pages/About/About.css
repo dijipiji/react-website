@@ -1,0 +1,17 @@
+.page-about-nav{
+	display: flex;
+	justify-content:flex-start;
+}
+
+li{
+	list-style: none;
+}
+
+.home-icon{
+    width: 2rem;
+}
+
+.about{
+	text-align: center;
+	font-size: 5rem;
+}

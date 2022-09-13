@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  /* --main-bg-color: radial-gradient(circle, rgb(158, 194, 248) 0%, rgb(49, 144, 228) 100%); */
+  --main-bg-color: radial-gradient(
+    circle,
+    rgb(49, 144, 228) 0%,
+    rgb(29, 84, 166) 100%
+  );
+  --main-font-color: #ffffff;
+  --sub-font-color: #5c7a9f;
+  --sub-font-color2: #072851;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "averagesans-reqular";
+  src: url("./assets/fonts/averagesans-regular.ttf") format("opentype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: "FreightSans Bold";
+  src: url("./assets/fonts/Freight Sans Bold.otf");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: "FreightSans Medium";
+  src: url("./assets/fonts/FreightSans Medium Regular.ttf");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "FreightSans Book";
+  src: url("./assets/fonts/FreightSans BookSC Regular.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSlab-500";
+  src: url("./assets/fonts/Museo_Slab_500.otf");
 }
