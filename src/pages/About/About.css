@@ -1,6 +1,8 @@
 .page-about-nav{
 	display: flex;
 	justify-content:flex-start;
+	background-color: black;
+	height: 2.5rem;
 }
 
 li{
@@ -8,10 +10,73 @@ li{
 }
 
 .home-icon{
-    width: 2rem;
+    width: 1.8rem;
 }
 
 .about{
 	text-align: center;
-	font-size: 5rem;
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+
+.about-container{
+  /* display: flex; */
+  width: 100vw;
+  /* margin-top:1.5rem; */
+  --auto-grid-min-size: 50rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  /* grid-gap: 1rem; */
+}
+
+.profile-box{
+  /* justify-content: space-between; */
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.profile-img{
+	width: 75%;
+}
+
+.profile-title{
+	background-color: rgba(2, 2, 15, 0.432);
+	margin: 1.5rem 4rem 1rem 4rem;
+	padding: 0.5rem;
+	font-size: 1.7rem;
+	border-radius: 20px;
+}
+
+.profile-link{
+	text-decoration: none; 
+}
+
+/* @media (max-width: 1200px){
+.about-container{
+  margin-top:5.5rem;
+}
+} */
+
+@media (max-width: 2400px){
+.about-container{
+  --auto-grid-min-size: 40rem;
+}
+}
+
+@media (max-width: 1920px){
+.about-container{
+  --auto-grid-min-size: 30rem;
+}
+}
+
+@media (max-width: 1450px){
+.about-container{
+  --auto-grid-min-size: 25rem;
+}
+}
+@media (max-width: 1270px){
+.about-container{
+  --auto-grid-min-size: 20rem;
+}
 }

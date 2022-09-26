@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import './index.css';
+import "./index.css";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -10,21 +10,3 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById("root")
 );
-
-// const Routing = () => {
-//   return (
-//     <BrowserRouter>
-//         <App />
-//     </BrowserRouter>
-//   );
-
-// }
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//      <Routing />
-//   </React.StrictMode>
-// );
-
-

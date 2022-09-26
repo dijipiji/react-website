@@ -12,12 +12,15 @@ export default function Home() {
       </div>
       <nav>
         <ul className="page-home-nav">
-          <li>
-            <Link to="/about">
-              About
-            </Link>
+          <li className="home-link">
+            <a target="_blank" href="https://dijipiji.com/services/index.html">
+              Service
+            </a>
           </li>
-          <li>
+          <li className="home-link">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="home-link">
             <Link to="/product">Product</Link>
           </li>
         </ul>

@@ -31,16 +31,23 @@ const mobileImages = [
   katakanaWMobile,
 ];
 
+const title = [
+  "Hiragana Bubbles",
+  "Hiragana Writing Challenge",
+  "Hiragana Krush",
+  "Pure Kanji"
+];
 const sentences = [
-  "a",
-  "b",
-  "c",
-  "d",
+  "Learn Hiragana fast and easily Hiragana Bubbles is a fun way to test your expertise and mastery of Hiragana. Learning basic character recognition is quick and easy with this App. Through playing the game you will reinforce and improve your visual recognition of written Japanese.",
+  "This application aims to help students of Japanese with their knowledge of Hiragana. The beautiful stroke order animations will help students appreciate the artistry of Japanese writing.The application allows for on screen touch writing and voice pronunciation followed by re-inforcement of learning through individual stroke order animation.",
+  "Train your kana-brain. Improve your kana recognition as you journey through all the characters of Hiragana and Katakana. Switch and match your way through fun levels and discover some Japanese words on the way. Discover fun Japanese emoji as you move through the levels and you progress through the kana",
+  "Master your kanji with Pure Kanji - the kanji app that you will want to look at and learn from. Pure Kanji contains JLPT sets 1-4 and is easy to use, quick to pick up and put down. Fast access to over 2000 Kanjis with no internet connection required."
 ];
 
 export default function Product() {
   const [selectedImg, setSelectedImg] = useState(mobileImages[0]);
   const [selectedSentence, setSelectedSentence] = useState(sentences[0]);
+  const [selectedTitle, setSelectedTitle] = useState(title[0]);
   
   return (
     <div>
@@ -51,21 +58,20 @@ export default function Product() {
               <img className="home-icon" src={homeIcon} alt="home-icon" />
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/about">About</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <div className="mobile-design-container">
         <div className="box-A">dijipiji mobile design</div>
 
         <div className="box-B">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident
+          We’ve been building iOS apps since the early days of the App Store
+          with our first released app in the Summer 2009 for iOS 3. From that
+          point on we’ve never looked back and have consistently kept our apps
+          up to date with the latest versions of iOS. We promise to continue our
+          support and welcome any ideas or feedback that you might have.
         </div>
 
         <div className="box-C">
@@ -93,10 +99,8 @@ export default function Product() {
         </div>
 
         <div className="box-F">
-          <p className="Product-discription-title">Hiragana Bubbles</p>
-          <p className="Product-discription-text">
-            {selectedSentence}
-          </p>
+          <p className="Product-discription-title">{selectedTitle}</p>
+          <p className="Product-discription-text">{selectedSentence}</p>
         </div>
 
         <div className="box-G">
@@ -107,11 +111,12 @@ export default function Product() {
                 className="App-img"
                 src={item}
                 alt={item}
-                onClick={()=>{
+                onClick={() => {
                   setSelectedImg(mobileImages[index]);
+                  setSelectedTitle(title[index]);
                   setSelectedSentence(sentences[index]);
                 }}
-                />
+              />
             ))}
           </div>
         </div>
