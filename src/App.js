@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 // Home:
@@ -13,11 +13,13 @@ function App() {
   return (
     <div>
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/product" element={<Product />} />
-        </Routes>
+        <HashRouter>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/product" component={Product} />
+          </Switch>
+        </HashRouter>
       </main>
     </div>
   );

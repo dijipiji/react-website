@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+// import ScrollComponent from "../../components/ScrollComponent/ScrollComponent"
 import "./About.css";
 const homeIcon = require("../../assets/images/home-icon.png");
 const Jam = require("../../assets/images/jam.png");
@@ -41,9 +41,16 @@ export default function About() {
       <div className="about-container">
         {aboutProfile.map((profile) => (
           <div className="profile-box">
-            <img className="profile-img" src={profile.img}></img>
+            <img className="profile-img" src={profile.img} alt="profile"></img>
             <p className="profile-title">{profile.title}</p>
-            <a href={profile.url} target="_blank" rel="noreferrer" className="profile-link">Find out more</a>
+            <a
+              href={profile.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="profile-link"
+            >
+              Find out more
+            </a>
           </div>
         ))}
       </div>

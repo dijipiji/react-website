@@ -1,0 +1,12 @@
+.down-button{
+    display: block;
+    position: fixed;
+    background: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    border-style: none;
+    margin: 0 47%;
+}

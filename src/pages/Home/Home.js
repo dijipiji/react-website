@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 export default function Home() {
@@ -13,7 +13,11 @@ export default function Home() {
       <nav>
         <ul className="page-home-nav">
           <li className="home-link">
-            <a target="_blank" href="https://dijipiji.com/services/index.html">
+            <a
+              target="_blank"
+              href="https://dijipiji.com/services/index.html"
+              rel="noopener noreferrer"
+            >
               Service
             </a>
           </li>
