@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
@@ -8,6 +8,8 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 // Product:
 import Product from "./pages/Product/Product";
+// ProductJapanese:
+import ProductJa from "./pages/Product/ProductJa";
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/product" component={Product} />
+            <Route exact path="/product/" component={Product} />
+            <Route exact path="/product/ja" component={ProductJa} />
           </Switch>
         </HashRouter>
       </main>

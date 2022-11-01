@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Product.css";
+import "./ProductJa.css";
 
 // const appImage = require("../../assets/images/app.png");
 const icon1Image = require("../../assets/images/hb-icon.png");
@@ -16,6 +16,7 @@ const hiraganaKMobile = require("../../assets/images/hk.png");
 const hiraganaWMobile = require("../../assets/images/hwc.png");
 const pureKanjiMobile = require("../../assets/images/pk.png");
 const homeIcon = require("../../assets/images/home-icon.png");
+
 
 const iconImages = [icon1Image, icon3Image, icon2Image, icon4Image];
 const appImages = [
@@ -35,24 +36,25 @@ const title = [
   "Hiragana Bubbles",
   "Hiragana Writing Challenge",
   "Hiragana Krush",
-  "Pure Kanji"
+  "Pure Kanji",
 ];
 const sentences = [
-  "Learn Hiragana fast and easily Hiragana Bubbles is a fun way to test your expertise and mastery of Hiragana. Learning basic character recognition is quick and easy with this App. Through playing the game you will reinforce and improve your visual recognition of written Japanese.",
-  "This application aims to help students of Japanese with their knowledge of Hiragana. The beautiful stroke order animations will help students appreciate the artistry of Japanese writing.The application allows for on screen touch writing and voice pronunciation followed by re-inforcement of learning through individual stroke order animation.",
-  "Train your kana-brain. Improve your kana recognition as you journey through all the characters of Hiragana and Katakana. Switch and match your way through fun levels and discover some Japanese words on the way. Discover fun Japanese emoji as you move through the levels and you progress through the kana",
-  "Master your kanji with Pure Kanji - the kanji app that you will want to look at and learn from. Pure Kanji contains JLPT sets 1-4 and is easy to use, quick to pick up and put down. Fast access to over 2000 Kanjis with no internet connection required."
-];
+  "ひらがなをサクッと手軽に習得したい人におすすめ。Hiragana Bubblesを使えば、ゲームをプレイするだけでひらがなの形を見分ける力をすばやく簡単に習得し、楽しみながら向上させることができます。基本的なひらがなに加えて「ば」や「ぱ」などの濁音や半濁音といった、学習者がつまづきがちな文字もゲームをプレイするだけで楽しく覚えることができます。まずはこのアプリのゲームに挑戦して、あなたのひらがなの習得度合いをチェックしてみてはいかがでしょうか。",
+  "Japanese description テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキスト",
+  "Japanese description テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキスト",
+  "Japanese description テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキスト"
+]
 
-export default function Product() {
+export default function ProductJa() {
   const [selectedImg, setSelectedImg] = useState(mobileImages[0]);
   const [selectedSentence, setSelectedSentence] = useState(sentences[0]);
   const [selectedTitle, setSelectedTitle] = useState(title[0]);
-  
+
   return (
     <div>
       <nav>
         <ul className="page-product-nav">
+
           <div>
             <li>
               <Link to="/">
@@ -60,13 +62,15 @@ export default function Product() {
               </Link>
             </li>
           </div>
+
           <div className="lan-icons">
+            <li>JA</li>
             <li>
-              <Link to="/product/ja" className="ja-icon">
-                JA
+              <Link to="/product/" className="en-icon">
+                {" "}
+                EN
               </Link>
             </li>
-            <li>EN</li>
           </div>
           {/* <li>
             <Link to="/about">About</Link>
@@ -77,11 +81,9 @@ export default function Product() {
         <div className="box-A">dijipiji mobile design</div>
 
         <div className="box-B">
-          We’ve been building iOS apps since the early days of the App Store
-          with our first released app in the Summer 2009 for iOS 3. From that
-          point on we’ve never looked back and have consistently kept our apps
-          up to date with the latest versions of iOS. We promise to continue our
-          support and welcome any ideas or feedback that you might have.
+          Japanese description
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキスト テキストテキストテキストテキスト
         </div>
 
         <div className="box-C">
@@ -109,8 +111,8 @@ export default function Product() {
         </div>
 
         <div className="box-F">
-          <p className="Product-discription-title">{selectedTitle}</p>
-          <p className="Product-discription-text">{selectedSentence}</p>
+          <p className="Product-discription-title-ja">{selectedTitle}</p>
+          <p className="Product-discription-text-ja">{selectedSentence}</p>
         </div>
 
         <div className="box-G">
