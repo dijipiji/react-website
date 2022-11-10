@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import "./Product.css";
 
 // const appImage = require("../../assets/images/app.png");
-const icon1Image = require("../../assets/images/hb-icon.png");
-const icon2Image = require("../../assets/images/kb-icon.png");
-const icon3Image = require("../../assets/images/hwc-icon.png");
-const icon4Image = require("../../assets/images/kwc-icon.png");
-const hiraganaImage = require("../../assets/images/hiraganabubbles.png");
-const katakanaImage = require("../../assets/images/katakanabubbles.png");
-const hiraganaWImage = require("../../assets/images/hiraganawriting.png");
-const katakanaWImage = require("../../assets/images/katakanawriting.png");
+const icon1Image = require("../../assets/images/icon-hb.png");
+const icon2Image = require("../../assets/images/icon-hwc.png");
+const icon3Image = require("../../assets/images/icon-kk.png");
+const icon4Image = require("../../assets/images/icon-pk.png");
+const app1Image = require("../../assets/images/panel-hb.png");
+const app2Image = require("../../assets/images/panel-hwc.png");
+const app3Image = require("../../assets/images/panel-kk.png");
+const app4Image = require("../../assets/images/panel-pk.png");
 const hiraganaMobile = require("../../assets/images/hb.png");
 const hiraganaKMobile = require("../../assets/images/hk.png");
 const hiraganaWMobile = require("../../assets/images/hwc.png");
@@ -18,12 +18,7 @@ const pureKanjiMobile = require("../../assets/images/pk.png");
 const homeIcon = require("../../assets/images/home-icon.png");
 
 const iconImages = [icon1Image, icon3Image, icon2Image, icon4Image];
-const appImages = [
-  hiraganaImage,
-  hiraganaWImage,
-  katakanaImage,
-  katakanaWImage,
-];
+const appImages = [app1Image, app2Image, app3Image, app4Image];
 const mobileImages = [
   hiraganaMobile,
   hiraganaWMobile,
