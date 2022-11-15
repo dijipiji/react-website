@@ -18,6 +18,10 @@ const pureKanjiMobile = require("../../assets/images/pk.png");
 const homeIcon = require("../../assets/images/home-icon.png");
 
 const iconImages = [icon1Image, icon3Image, icon2Image, icon4Image];
+const iconImagesLink=["https://apps.apple.com/app/hiragana-bubbles/id324020166",
+                      "https://apps.apple.com/app/hiragana-krush/id1264182156",
+                      "https://apps.apple.com/app/hiragana-writing-challenge/id317183948",
+                      "https://apps.apple.com/app/pure-kanji/id576232844"]
 const appImages = [app1Image, app2Image, app3Image, app4Image];
 const mobileImages = [
   hiraganaMobile,
@@ -86,13 +90,19 @@ export default function Product() {
           </div>
           <div className="icon-img-container">
             <div>
-              {iconImages.map((item) => (
-                <img
-                  key={item.toString()}
-                  className="AppIcon-img"
-                  src={item}
-                  alt={item}
-                />
+              {iconImages.map((item, index) => (
+                <a
+                  href={iconImagesLink[index]}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img
+                    key={item.toString()}
+                    className="AppIcon-img"
+                    src={item}
+                    alt={item}
+                  />
+                </a>
               ))}
             </div>
           </div>
