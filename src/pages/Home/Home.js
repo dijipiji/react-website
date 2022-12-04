@@ -13,13 +13,13 @@ export default function Home() {
       <nav>
         <ul className="page-home-nav">
           <li className="home-link">
-            <a
+            {/* <a
               target="_blank"
               href="https://dijipiji.com/services/index.html"
               rel="noopener noreferrer"
             >
               Service
-            </a>
+            </a> */}
           </li>
           <li className="home-link">
             <Link to="/about">About</Link>
